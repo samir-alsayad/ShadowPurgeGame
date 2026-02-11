@@ -1,0 +1,68 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>170</x><y>469</y><w>150</w><h>170</h></coordinates><panel_attributes>*Waffe*
+--
+- name: String
+- schaden: int
+--
++ Waffe()
++ Waffe(name, schaden)
++ getName(): String
++ setName(String): void
++ getSchaden(): int
++ setSchaden(int): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>179</y><w>240</w><h>260</h></coordinates><panel_attributes>*Gegner*
+--
+- name: String
+- lebenspunkte: int
+- schaden: int
+--
++ Gegner()
++ Gegner(name, lebenspunkte, schaden)
++ getName(): String
++ setName(String): void
++ getLebenspunkte(): int
++ setLebenspunkte(int): void
++ getSchaden(): int
++ setSchaden(int): void
++ bewegung(): void
++ angriff(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>179</y><w>270</w><h>260</h></coordinates><panel_attributes>*Spieler*
+--
+- name: String
+- lebenspunkte: int
+- magiepunkte: int
+--
++ Spieler()
++ Spieler(name, lebenspunkte, magiepunkte)
++ getName(): String
++ setName(String): void
++ getLebenspunkte(): int
++ setLebenspunkte(int): void
++ getMagiepunkte(): int
++ setMagiepunkte(int): void
++ bewegung(): void
++ angriff(): void
++ magie(): void
++ aufsammeln(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>469</y><w>130</w><h>170</h></coordinates><panel_attributes>*Energie*
+--
+- typ: String
+--
++ Energie()
++ Energie(typ)
++ getTyp(): String
++ setTyp(String): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>469</y><w>170</w><h>170</h></coordinates><panel_attributes>*Karte*
+--
+- name: String
+--
++ Karte()
++ Karte(name)
++ getName(): String
++ setName(String): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>469</y><w>170</w><h>170</h></coordinates><panel_attributes>*Runde*
+--
+- rundeAktuell: int
+--
++ Runde()
++ Runde(typ)
++ getRundeAktuell(): int
++ setRundeAktuell(int): void
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

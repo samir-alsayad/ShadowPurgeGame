@@ -1,0 +1,97 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>150</x><y>610</y><w>150</w><h>170</h></coordinates><panel_attributes>*Waffe*
+--
+- name: String
+- schaden: int
+--
++ Waffe()
++ Waffe(name, schaden)
++ getName(): String
++ setName(String): void
++ getSchaden(): int
++ setSchaden(int): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>270</y><w>240</w><h>260</h></coordinates><panel_attributes>*Gegner*
+--
+- name: String
+- lebenspunkte: int
+- schaden: int
+--
++ Gegner()
++ Gegner(name, lebenspunkte, schaden)
++ getName(): String
++ setName(String): void
++ getLebenspunkte(): int
++ setLebenspunkte(int): void
++ getSchaden(): int
++ setSchaden(int): void
++ bewegung(): void
++ angriff(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>130</x><y>270</y><w>270</w><h>260</h></coordinates><panel_attributes>*Spieler*
+--
+- name: String
+- lebenspunkte: int
+- magiepunkte: int
+--
++ Spieler()
++ Spieler(name, lebenspunkte, magiepunkte)
++ getName(): String
++ setName(String): void
++ getLebenspunkte(): int
++ setLebenspunkte(int): void
++ getMagiepunkte(): int
++ setMagiepunkte(int): void
++ bewegung(): void
++ angriff(): void
++ magie(): void
++ aufsammeln(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>610</y><w>250</w><h>170</h></coordinates><panel_attributes>*Energie*
+--
+- typ: String
+--
++ Energie()
++ Energie(typ)
++ getTyp(): String
++ setTyp(String): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>10</y><w>340</w><h>170</h></coordinates><panel_attributes>*Karte*
+--
+- name: String
+- ebene: int 
+--
++ Karte()
++ Karte(name)
++ getName(): String
++ setName(String): void
++ getEbene(): int 
++ set Ebene(int): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>380</y><w>210</w><h>50</h></coordinates><panel_attributes>lt=-
+m1= 1
+m2= 1..*
+kaempft gegen &gt;</panel_attributes><additional_attributes>10;20;190;20</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>520</y><w>60</w><h>110</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=1..*
+hat &gt;</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>520</y><w>140</w><h>110</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+hat fallen gelasen &gt;</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>520</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>520</y><w>120</w><h>110</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1..*
+sammelt auf  &gt;</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>750</x><y>10</y><w>170</w><h>190</h></coordinates><panel_attributes>*Level*
+--
+- levelAktuell: int
+- rundeAktuell : int 
+--
++ Level()
++ Level(typ)
++ Runde()
++ Runde(typ)
++ getLevelAktuell(): int
++ setLevelAktuell(int): void
++ getRundeAktuell(): int 
++ setRundeAktuell(int): void 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>520</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>80</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+besteht aus  &gt;</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>90</y><w>150</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>90</y><w>150</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>130;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>170</y><w>90</w><h>120</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+enthaelt &gt;</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>170</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>170</y><w>100</w><h>120</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=1
+teaches to &gt;</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element></diagram>

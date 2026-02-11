@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umletino" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>100</y>
+      <w>250</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>_myMap : Karte_
+--
+name = "The Void"
+ebene = 3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>100</x>
+      <y>300</y>
+      <w>200</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>_lumis : Spieler_
+--
+name = "Lumis"
+lebenspunkte = 100
+magiepunkte = 80</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>300</y>
+      <w>250</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>_boss : Gegner_
+--
+name = "The Nameless Void"
+lebenspunkte = 500
+schaden = 40</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>210</y>
+      <w>100</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=-
+enthaelt &gt;</panel_attributes>
+    <additional_attributes>100;10;10;90</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>210</y>
+      <w>180</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=-
+enthaelt &gt;</panel_attributes>
+    <additional_attributes>10;10;140;90</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>290</x>
+      <y>350</y>
+      <w>130</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+kaempft gegen &gt;</panel_attributes>
+    <additional_attributes>10;20;110;20</additional_attributes>
+  </element>
+</diagram>

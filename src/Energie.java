@@ -1,24 +1,56 @@
-import greenfoot.*;
-
-/**
- * Energie-Klasse (z.B. Licht-Partikel).
- */
-public class Energie extends Actor {
-    private String typ;
+public class Energie {
+    private String name;
+    private int lebenspunkte;
+    private int schaden;
+    private Spieler spieler;
+    private Energie energie;
 
     public Energie() {
-        this.typ = "Licht-Partikel";
     }
 
-    public Energie(String typ) {
-        this.typ = typ;
-    }
-    
-    public void act() {
-        // Animation oder Bewegung?
+    public Energie(String name, int lebenspunkte, int schaden) {
+        this.name = name;
+        this.lebenspunkte = lebenspunkte;
+        this.schaden = schaden;
     }
 
-    // Getter und Setter
-    public String getTyp() { return typ; }
-    public void setTyp(String typ) { this.typ = typ; }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getLebenspunkte() {
+        return lebenspunkte;
+    }
+
+    public void setLebenspunkte(int lebenspunkte) {
+        this.lebenspunkte = lebenspunkte;
+    }
+
+    public int getSchaden() {
+        return schaden;
+    }
+
+    public void setSchaden(int schaden) {
+        this.schaden = schaden;
+    }
+
+    public Spieler getSpieler() {
+        return spieler;
+    }
+
+    public void setSpieler(Spieler spieler) {
+        this.spieler = spieler;
+    }
+
+    public Energie getEnergie() {
+        return energie;
+    }
+
+    public void setEnergie(Energie energie) {
+        this.energie = energie;
+    }
 }

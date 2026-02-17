@@ -1,28 +1,18 @@
-import greenfoot.*;
+public class Karte {
 
-/**
- * Die Spielwelt fuer Shadow Purge.
- */
-public class Karte extends World {
     private String name;
     private int ebene;
-    
-    // Referenzen auf andere Objekte gemaess OOD
     private Spieler spieler;
-    private Gegner gegner; // OOD sagt singular, aber in Greenfoot sind es meist viele
+    private Gegner gegner;
     private Level level;
 
     public Karte() {
-        // Standard-Groesse fuer Greenfoot-Welten (600x400)
-        super(800, 600, 1);
     }
 
-    public Karte(String name) {
-        super(800, 600, 1);
+    public Karte(String name){
         this.name = name;
     }
 
-    // Getter und Setter gemaess OOD
     public String getName() {
         return name;
     }
@@ -45,7 +35,6 @@ public class Karte extends World {
 
     public void setSpieler(Spieler spieler) {
         this.spieler = spieler;
-        addObject(spieler, 400, 300); // Beispielposition
     }
 
     public Gegner getGegner() {
@@ -54,7 +43,6 @@ public class Karte extends World {
 
     public void setGegner(Gegner gegner) {
         this.gegner = gegner;
-        addObject(gegner, 100, 100); // Beispielposition
     }
 
     public Level getLevel() {

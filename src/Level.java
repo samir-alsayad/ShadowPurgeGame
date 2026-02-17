@@ -1,15 +1,9 @@
-/**
- * Verwaltet den aktuellen Level-Status.
- * Hinweis: Diese Klasse ist kein Actor, sondern ein Logik-Objekt.
- */
 public class Level {
+
     private int levelAktuell;
     private int rundeAktuell;
-    
-    // Referenz auf die Karte
-    // Problem: Zirkulaere Abhaengigkeit im OOD (Karte <-> Level). 
-    // Wir nutzen hier den Klassennamen, Import nicht noetig da gleiches Package.
     private Karte karte;
+    private String typ;
 
     public Level() {
         this.levelAktuell = 1;
@@ -17,16 +11,48 @@ public class Level {
     }
 
     public Level(String typ) {
-        // Konstruktor aus OOD, Parameter 'typ' unklar, evtl Level-Name?
+        this();
+        this.typ = typ;
     }
-    
-    // Getter und Setter
-    public int getLevelAktuell() { return levelAktuell; }
-    public void setLevelAktuell(int levelAktuell) { this.levelAktuell = levelAktuell; }
 
-    public int getRundeAktuell() { return rundeAktuell; }
-    public void setRundeAktuell(int rundeAktuell) { this.rundeAktuell = rundeAktuell; }
+    public void Runde() {
+        this.rundeAktuell++;
+    }
 
-    public Karte getKarte() { return karte; }
-    public void setKarte(Karte karte) { this.karte = karte; }
+    public void Runde(String typ) {
+        this.typ = typ;
+        Runde();
+    }
+
+    public int getLevelAktuell() {
+        return levelAktuell;
+    }
+
+    public void setLevelAktuell(int levelAktuell) {
+        this.levelAktuell = levelAktuell;
+    }
+
+    public int getRundeAktuell() {
+        return rundeAktuell;
+    }
+
+    public void setRundeAktuell(int rundeAktuell) {
+        this.rundeAktuell = rundeAktuell;
+    }
+
+    public Karte getKarte() {
+        return karte;
+    }
+
+    public void setKarte(Karte karte) {
+        this.karte = karte;
+    }
+
+    public String getTyp() {
+        return typ;
+    }
+
+    public void setTyp(String typ) {
+        this.typ = typ;
+    }
 }
